@@ -163,7 +163,7 @@ function WorkDetail({
           </div>
         )}
 
-        <article className="wk-detail-article">
+        <article className={`wk-detail-article wk-detail-${item.slug}`}>
           <header className="wk-detail-head">
             <h3 className="wk-detail-title">{title}</h3>
             {sub && <div className="wk-detail-sub">{sub}</div>}

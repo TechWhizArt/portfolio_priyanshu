@@ -1232,9 +1232,17 @@ canvas {
 
 /* 正文文章：居中窄栏，舒适阅读宽度 */
 .wk-detail-article {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   padding: clamp(28px, 5vh, 56px) clamp(24px, 5vw, 56px) clamp(40px, 8vh, 88px);
+}
+.wk-detail-artwork {
+  max-width: 1200px;
+
+}
+.wk-detail-photography {
+  max-width: 1200px;
+
 }
 .wk-detail-head {
   padding-bottom: clamp(20px, 3vh, 30px);
