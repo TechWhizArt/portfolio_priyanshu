@@ -31,7 +31,7 @@ The main goal was to create a distinct emotional response from the viewer while 
 I created the 3D environment and arranged the different elements to build the final composition. I worked with volumetric lighting, suspended physics, materials, and camera composition to establish the atmosphere of the piece.
 
 <iframe
-  src="/works/ModelPhotos/creepy/file.html"
+  src="./works/ModelPhotos/creepy/file.html"
   style="width: 100%; height: 400px; border: none; display: block;"
   allowfullscreen>
 </iframe>
