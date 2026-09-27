@@ -19,13 +19,14 @@ I handled **video shooting, editing, pacing, transitions, text animation, visual
 
 ## Video Showcase
 
+
+<div className = "wk-detail-posters-posters">
+
 ### Advertisement 01
-
-
 <iframe
   src="https://drive.google.com/file/d/1OiGWCe25ETge_IGC37adJk9ufF2OyoZN/preview?usp=sharing"
-  width="50%"
-  height="400"
+  width="100%"
+  height="450"
   allow="autoplay">
 </iframe>
 
@@ -33,8 +34,8 @@ I handled **video shooting, editing, pacing, transitions, text animation, visual
 
 <iframe
   src="https://drive.google.com/file/d/1l5UZEMZxWhgrZnHGtPphka-DX69w2HR8/preview?usp=sharing"
-  width="50%"
-  height="400"
+  width="100%"
+  height="450"
   allow="autoplay">
 </iframe>
 
@@ -42,10 +43,11 @@ I handled **video shooting, editing, pacing, transitions, text animation, visual
 
 <iframe
   src="https://drive.google.com/file/d/1z1yQCoW5Aw4_USIBd32O9vtZUfi_xwuT/preview?usp=sharing"
-  width="50%"
-  height="400"
+  width="100%"
+  height="450"
   allow="autoplay">
 </iframe>
+</div>
 
 ## Outcome
 

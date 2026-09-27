@@ -123,8 +123,8 @@ export const WORKS: WorksLang = {
         items: [
           { name: 'Stop Motion', slug: 'stopmotion' },
           { name: 'Animation', slug: 'animation' },
-          { name: 'Certificates', slug: 'animation' },
-          { name: 'Other side projects', slug: 'other-side-works' },
+          { name: 'Certificates', slug: 'certificate' },
+          { name: 'Other side projects', slug: 'othersideworks' },
         ],
       },
     ],

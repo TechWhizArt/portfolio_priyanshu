@@ -1,6 +1,6 @@
 ---
 title: Other 3D Projects
-banner: /works/other-3d-projects/banner.jpg
+banner: /works/ModelPhotos/other/flower.jpg
 year: 2024
 role: 3D Artist
 tags: [3D Art, Blender, 3D Modeling]
@@ -16,8 +16,79 @@ These projects allowed me to experiment with **3D modeling, materials, lighting,
 
 ## Works
 
-![3D Model 01](/works/other-3d-projects/model-01.jpg)
 
-![3D Model 02](/works/other-3d-projects/model-02.jpg)
+## The TV Room
 
-![3D Model 03](/works/other-3d-projects/model-03.jpg)
+<iframe
+  src="https://drive.google.com/file/d/1s-9ISH60GUaIru30gysnVw3soglFhdHO/preview?usp=sharing"
+  style="width: 100%; height: 450px; border: none; display: block;"
+  allowfullscreen>
+  
+  
+</iframe>
+
+<iframe
+  src="https://drive.google.com/file/d/10vSqs6ecwXvk6wPPRZdD819wWsnIrxEI/preview?usp=sharing"
+  style="width: 100%; height: 450px; border: none; display:block;"
+  allowfullscreen>
+</iframe>
+
+
+## Ferrrrrari
+
+
+<iframe
+  src="https://drive.google.com/file/d/1oesrpgOAuowFNwaaouamyrLlDZDAdwLj/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+<iframe
+  src="https://drive.google.com/file/d/1qabZot4UkvyyeoSibQFXYlrpU8bPxZYZ/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+## Character A
+
+<iframe
+  src="https://drive.google.com/file/d/1S90QNlX_CbgxQYZv2qGjDqbPL4GRu76E/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+
+<iframe
+  src="https://drive.google.com/file/d/13OxMN4TdueMFRJe2xMN_bGyudmQeMxHT/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+
+<iframe
+  src="https://drive.google.com/file/d/1RqY-XD-6sFyHqznrWaVK5yDjNRUrvO0M/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+
+## Character B
+
+
+<iframe
+  src="https://drive.google.com/file/d/1VYWs_fOuinL6GGokt2ArKgVgT67ARni1/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+<iframe
+  src="https://drive.google.com/file/d/18Ue97am1J_Ypg3HA5Xa492S74ZHYtoYI/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill;"
+  allowfullscreen>
+</iframe>
+
+## Skate Board
+
+![Other 3D Projects Preview](works/covers/model.jpg)
+
+## Redbull
