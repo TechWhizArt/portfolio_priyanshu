@@ -124,7 +124,7 @@ export const WORKS: WorksLang = {
           { name: 'Stop Motion', slug: 'stopmotion' },
           { name: 'Animation', slug: 'animation' },
           { name: 'Certificates', slug: 'certificate' },
-          { name: 'Other side projects', slug: 'othersideworks' },
+          { name: 'Other side projects', slug: 'othersideprojects' },
         ],
       },
     ],
@@ -135,9 +135,9 @@ export const WORKS: WorksLang = {
 // 缺图时左栏用大编号渐变占位，放入图片后自动点亮。
 export const SECTION_COVERS: Record<string, string> = {
   ad: `${import.meta.env.BASE_URL}works/covers/model.jpg`,
-  maker: `${import.meta.env.BASE_URL}works/covers/maker.jpg`,
-  product: `${import.meta.env.BASE_URL}works/covers/product.jpg`,
-  graphics: `${import.meta.env.BASE_URL}works/covers/graphics.jpg`,
+  maker: `${import.meta.env.BASE_URL}works/covers/cafe.png`,
+  product: `${import.meta.env.BASE_URL}works/covers/digiart.jpg`,
+  graphics: `${import.meta.env.BASE_URL}works/covers/side.png`,
 }
 
 // 统计一个板块的作品数（items 或 groups 求和），用于索引行 hover 显示

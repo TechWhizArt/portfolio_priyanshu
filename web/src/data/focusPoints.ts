@@ -17,4 +17,4 @@
 export const FOCUS_POINTS = ['focus-1', 'focus-2', 'focus-3', 'focus-4', 'focus-5'] as const
 
 // 每个时间轴节点在相机动画里占的帧数（节点 k 落在第 k·FRAMES_PER_NODE 帧）。
-export const FRAMES_PER_NODE = 50
+export const FRAMES_PER_NODE = 25

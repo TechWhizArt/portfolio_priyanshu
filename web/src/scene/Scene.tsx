@@ -1,10 +1,11 @@
 import { Suspense, useMemo, useRef, useEffect, type MutableRefObject } from 'react'
 import { useThree, useFrame } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
-import { EffectComposer, Bloom, DepthOfField, SMAA } from '@react-three/postprocessing'
+import { EffectComposer, Bloom, DepthOfField, SMAA, } from '@react-three/postprocessing'
 import * as THREE from 'three'
 import Env from './Env'
 import { FOCUS_POINTS, FRAMES_PER_NODE } from '../data/focusPoints'
+
 
 useGLTF.preload(`${import.meta.env.BASE_URL}models/me.glb`)
 
@@ -19,8 +20,8 @@ const NODE_LINE = 0.3 // 节点"终点"参考线：条目顶部到达视口该�
 // 上下渐变背景球（包裹相机），两端颜色可调
 function GradientBackground() {
   // glb 相机视角很窄(~23°)，只看到渐变中间一条；陡度把可见窄带拉伸出完整过渡
-  const top = '#32554f'
-  const bottom = '#627a7c'
+  const top = '#0b0a0a'
+  const bottom = '#1a1a1a'
   const steep = 1.4
 
   const uniforms = useMemo(
@@ -68,15 +69,15 @@ function GradientBackground() {
 // 所有光源（HDRI 环境 + 半球 + 主/补方向光）
 function Lights() {
   const c = {
-    envIntensity: 0.85,
-    hemiIntensity: 1.15,
-    hemiSky: '#ffffff',
+    envIntensity: 0.3,
+    hemiIntensity: 0.5,
+    hemiSky: '#0707078d',
     hemiGround: '#404040',
-    keyIntensity: 2.35,
-    keyColor: '#ffd9c6',
+    keyIntensity: 1.5,
+    keyColor: '#04040492',
     keyPos: [5, 8, 5] as [number, number, number],
-    fillIntensity: 2.25,
-    fillColor: '#9fc6ff',
+    fillIntensity: 1,
+    fillColor: '#161617',
     fillPos: [-5, 4, -4] as [number, number, number],
   }
 
@@ -127,7 +128,7 @@ function Man2({
   const cam = {
     damping: 0.1,
     dwell: 0.35,
-    parallax: 4,
+    parallax: 1,
     parallaxEase: 0.1,
     mobilePullback: 1.2,
     mobileTimelineShift: 0.12,
@@ -146,7 +147,7 @@ function Man2({
   }
 
   const get = useThree((s) => s.get)
-  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}models/me2.glb`)
+  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}models/to_web.glb`)
 
   // 克隆模型；收集眼睛对象、聚焦锚点对象、glb 自带相机、各锚点景深开关
   const { model, eyes, points, startPoint, glbCam, focusNode, dof } = useMemo(() => {
@@ -545,7 +546,7 @@ function Post2({
   dofRangeRef: MutableRefObject<number>
 }) {
   const post = {
-    bloomIntensity: 0.6,
+    bloomIntensity: 1,
     bloomThreshold: 0.82,
     dof: true,
     startBokeh: 7.4,
@@ -588,14 +589,17 @@ function Post2({
           bokehScale={post.focusBokeh}
           height={480}
         />
+        
       ) : null) as any}
+      
       <Bloom
         mipmapBlur
         intensity={post.bloomIntensity}
         luminanceThreshold={post.bloomThreshold}
-        luminanceSmoothing={0.3}
+        luminanceSmoothing={4}
       />
       <SMAA />
+      
     </EffectComposer>
   )
 }
