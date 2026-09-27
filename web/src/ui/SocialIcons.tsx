@@ -67,9 +67,38 @@ export function EmailIcon(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+export function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.8c0-3.75-2-5.5-4.7-5.5-2.15 0-3.1 1.18-3.64 2.02V8.5H9.2V21h3.46v-6.18c0-1.63.3-3.2 2.33-3.2 2 0 2.03 1.86 2.03 3.3V21H21v-7.2Z" />
+    </svg>
+  )
+}
+
+export function PatreonIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M4 3h4v18H4V3Zm6 0h3.2c4.1 0 6.8 2.2 6.8 5.7 0 3.6-2.7 5.8-6.8 5.8H10V3Zm3.2 8.5c1.9 0 3-1 3-2.8 0-1.7-1.1-2.7-3-2.7H13v5.5h.2Z" />
+    </svg>
+  )
+}
+
 export const SOCIAL_ICONS = {
   youtube: YouTubeIcon,
   instagram: InstagramIcon,
   artstation: ArtStationIcon,
   email: EmailIcon,
+  linkedin: LinkedInIcon,
+  patreon: PatreonIcon
+
 }

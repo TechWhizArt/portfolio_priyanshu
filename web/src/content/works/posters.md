@@ -1,12 +1,12 @@
 ---
 title: Advertising Posters
-banner: works/advertising-posters/banner.jpg
+banner: works/ModelPhotos/other/poster.jpg
 year: 2024
 role: Graphic Designer
-tags: [Graphic Design, Advertising, Poster Design]
+tags: [Poster Design, Color Palette, Shapes]
 ---
 
-# Advertising Posters
+
 
 A collection of advertising posters I designed for different businesses, focusing on visual communication and promotional design.
 

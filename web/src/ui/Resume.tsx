@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 import { SOCIAL_ICONS } from './SocialIcons'
 import { FOCUS_POINTS } from '../data/focusPoints'
-
+import FlapFlapLogo from './FlapFlap'
 // const SOCIAL_LINKS = [
 //   {
 //     id: 'douyin',
@@ -41,10 +41,16 @@ const SOCIAL_LINKS = [
     label: 'Email',
     href: 'mailto:business.priyanshuyt@gmail.com',
   },
-
-  //https://www.linkedin.com/in/priyanshu-yadav-16043424a?utm_source=share_via&utm_content=profile&utm_medium=member_android
-
-  //https://www.patreon.com/user?u=159638073&utm_campaign=creatorshare_creator
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/priyanshu-yadav-16043424a?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+  },
+  {
+    id: 'patreon',
+    label: 'Patreon',
+    href: 'https://www.patreon.com/user?u=159638073&utm_campaign=creatorshare_creator',
+  },
 
 
 ]
@@ -119,9 +125,9 @@ const RESUME = {
       },
       {
         //work experience
-        period: '2026 – Now',
+        period: '2026 – 2026',
         place: 'Indie Developer',
-        groups: [{ logo: 'zooop', sub: 'AI creation platform', link: 'https://zooop.ai/' }],
+        groups: [{ logo: 'flapflap', sub: 'Set Design', link: 'https://zooop.ai/' }],
       },
     ],
   
@@ -153,7 +159,17 @@ function Group({ group }: { group: ResumeGroup }) {
       >
 
       </a>
-    ) : group.link ? (
+    ): group.logo === 'flapflap' ? (
+  <a
+    className="flapflap-logo-link"
+    href={group.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="FlapFlap"
+  >
+    <FlapFlapLogo />
+  </a>
+)  : group.link ? (
       <a className="about-link" href={group.link} target="_blank" rel="noopener noreferrer">
         {group.heading}
       </a>

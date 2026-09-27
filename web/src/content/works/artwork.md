@@ -175,5 +175,7 @@ Digital art allows me to explore different ideas and visual styles beyond tradit
 
 
 
+<div className = "instagram-cta">
+Explore more on my Instagram
 
-### Explore more amazing artworks on my instagram channel:
+</div>

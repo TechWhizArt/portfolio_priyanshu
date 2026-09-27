@@ -14,8 +14,6 @@ A 3D character model inspired by **Furiosa: A Mad Max Saga**, created as an expl
 
 This project focused on recreating the character in 3D while studying **form, proportions, clothing, accessories, and surface details** to capture the visual style of the character.
 
-The model was also **recognized with an award in the Character Modeling category**, highlighting the quality and detail of the work.
-
 ## Process
 
 I worked on the character modeling, detailing, materials, and overall presentation to create a complete 3D representation.
@@ -26,3 +24,8 @@ I worked on the character modeling, detailing, materials, and overall presentati
   style="width: 100%; height: 430px; border: none; display:fill;"
   allowfullscreen>
 </iframe>
+
+
+## Award
+
+This model received an award in the **Character Modeling** category, recognizing the character modeling and detailed 3D work involved in the project.

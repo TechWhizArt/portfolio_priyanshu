@@ -32,7 +32,7 @@ I created the 3D environment and arranged the different elements to build the fi
 
 
 
-<div>
+<div className = "interact-here">
 Interact Here
 </div>
 
@@ -57,6 +57,7 @@ Interact Here
 </iframe>
 
 <br>
+
 ![Creepy Levitation Preview](works/ModelPhotos/creepy/banner1.jpg)
 
 <br>

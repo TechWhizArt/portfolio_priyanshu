@@ -83,7 +83,7 @@ export const WORKS: WorksLang = {
         id: 'product',
         no: '02',
         title: 'Digital Art & Photography',
-        tagline: 'Sketching · Illustration · Tattoo Design · Concept Art',
+        tagline: 'Illustration · Digital Sketch · Frames',
         items: [
           { name: 'Art Work', meta: '', link: 'https://www.instagram.com/priyanshwho.art/', slug: 'artwork' },
           { name: 'Photographs', meta: '', link: 'https://www.instagram.com/priyanshwhowithcamera/', slug: 'photography' }
@@ -93,33 +93,30 @@ export const WORKS: WorksLang = {
         id: 'maker',
         no: '03',
         title: 'Advertising',
-        tagline: 'Video Editing · Graphic Designing · Logo Design · Photography',
+        tagline: 'Designs · Banners · Reels',
         items: [
           {
             name: 'I Edited these Videos for Advertising',
-            meta: 'Video Editing',
+            meta: '',
             slug: 'editvdos',
           },
           {
             name: 'I designed these posters',
-            meta: 'Graphic Design',
+            meta: '',
             slug: 'posters',
           },
-          {
-            name: 'I shot and edited these reels',
-            meta: 'Photography',
-            slug: 'switch-cat-house',
-          },
+          
+          
           
         ],
-        footer: 'footer',
+        footer: 'Designed to leave a mark',
       },
       
       {
         id: 'graphics',
         no: '04',
         title: 'Side Projects',
-        tagline: 'Raymarching · WebGL · Blender',
+        tagline: 'Stop Motion · Animation · Nuke ',
         items: [
           { name: 'Stop Motion', slug: 'stopmotion' },
           { name: 'Animation', slug: 'animation' },
@@ -135,9 +132,9 @@ export const WORKS: WorksLang = {
 // 缺图时左栏用大编号渐变占位，放入图片后自动点亮。
 export const SECTION_COVERS: Record<string, string> = {
   ad: `${import.meta.env.BASE_URL}works/covers/model.jpg`,
-  maker: `${import.meta.env.BASE_URL}works/covers/cafe.png`,
-  product: `${import.meta.env.BASE_URL}works/covers/digiart.jpg`,
-  graphics: `${import.meta.env.BASE_URL}works/covers/side.png`,
+  maker: `${import.meta.env.BASE_URL}works/covers/advcover.jpeg`,
+  product: `${import.meta.env.BASE_URL}works/covers/digiartcover.jpeg`,
+  graphics: `${import.meta.env.BASE_URL}works/covers/sidecover.jpeg`,
 }
 
 // 统计一个板块的作品数（items 或 groups 求和），用于索引行 hover 显示

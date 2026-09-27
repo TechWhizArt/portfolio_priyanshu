@@ -88,6 +88,12 @@ These projects allowed me to experiment with **3D modeling, materials, lighting,
 
 ![Other 3D Projects Preview](works/covers/model.jpg)
 
+## Redbull
+<div className = "othermodelsimg">
+
+![Other 3D Projects Preview](works/ModelPhotos/other/redbull.jpeg)
+</div>
+
 <!-- ## Redbull
 <iframe
   src="https://drive.google.com/file/d/154_o3adVoiSyg9kM6LEByrrPgTY_Pu_I/preview?usp=sharing"
