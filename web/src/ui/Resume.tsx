@@ -41,6 +41,12 @@ const SOCIAL_LINKS = [
     label: 'Email',
     href: 'mailto:business.priyanshuyt@gmail.com',
   },
+
+  //https://www.linkedin.com/in/priyanshu-yadav-16043424a?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
+  //https://www.patreon.com/user?u=159638073&utm_campaign=creatorshare_creator
+
+
 ]
 // 履历数据（双语）。英文为译稿，可按需润色。
 interface ResumeGroup {

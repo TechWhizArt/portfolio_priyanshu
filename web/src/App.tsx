@@ -165,7 +165,7 @@ export default function App() {
           <span>3D Artist | Designer | Editor</span>
         </div>
         <div className="hero-meta hm-tr">Portfolio — 2026</div>
-        <div className="hero-meta hm-bl">Code · Art · Play</div>
+        <div className="hero-meta hm-bl">Pen · Camera · Action</div>
         <div className="hero-meta hm-right">Based in Mumbai</div>
       </motion.div>
 

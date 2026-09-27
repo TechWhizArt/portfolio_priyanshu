@@ -69,29 +69,29 @@ export const WORKS: WorksLang = {
         id: 'ad',
         no: '01',
         title: '3D Models',
-        tagline: '3D Modelling · Adobe Maya',
+        tagline: '3D Modelling · Autodesk Maya',
         items: [
-          { name: 'Creepy Levitation', meta: '3D Model', slug: 'creepy' },
-          { name: 'Double Barrel Plasma Cannon', meta: '3D Model', slug: 'canon' },
-          { name: 'Project NYX Sifi Bike', meta: '3D Model', slug: 'bike' },
-          { name: 'Furosa- A Mad Max Saga', meta: '3D Model', slug: 'character' },
+          { name: 'Creepy Levitation', meta: '', slug: 'creepy' },
+          { name: 'Double Barrel Plasma Cannon', meta: '', slug: 'canon' },
+          { name: 'Project NYX Sifi Bike', meta: '', slug: 'bike' },
+          { name: 'Furosa- A Mad Max Saga', meta: '', slug: 'character' },
           { name: 'Other Works', slug: 'othermodels' },
         ],
         awards: ['Tiger Roar', 'FWA', 'Awwwards'],
       },
       {
         id: 'product',
-        no: '03',
+        no: '02',
         title: 'Digital Art & Photography',
         tagline: 'Sketching · Illustration · Tattoo Design · Concept Art',
         items: [
-          { name: 'Art Work', meta: 'DigiArt', link: 'https://www.instagram.com/priyanshwho.art/', slug: 'artwork' },
-          { name: 'Photographs', meta: 'Photos', link: 'https://www.instagram.com/priyanshwhowithcamera/', slug: 'photography' }
+          { name: 'Art Work', meta: '', link: 'https://www.instagram.com/priyanshwho.art/', slug: 'artwork' },
+          { name: 'Photographs', meta: '', link: 'https://www.instagram.com/priyanshwhowithcamera/', slug: 'photography' }
         ],
       },
       {
         id: 'maker',
-        no: '02',
+        no: '03',
         title: 'Advertising',
         tagline: 'Video Editing · Graphic Designing · Logo Design · Photography',
         items: [

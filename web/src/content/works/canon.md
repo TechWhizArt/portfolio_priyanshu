@@ -8,7 +8,7 @@ year: 2023
 
 role: 3D Artist
 
-tags: [3D Art, Adobe Maya, Sci-Fi, Hard Surface]
+tags: [Substance Painter, Autodesk Maya, Photoshop, Arnold]
 
 ---
 
@@ -32,17 +32,27 @@ I created the 3D model by building the weapon and its surrounding mechanical com
 
 The final artwork combines detailed geometry, industrial materials, lighting, and scale to create a cohesive futuristic sci-fi environment.
 
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/first.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/second.jpg)
+<iframe
+  src="https://drive.google.com/file/d/14Tof9y2DPF-YfxjLDrXCQDiGeyerleeb/preview?usp=sharing"
+  width="100%"
+  height="450"
+  allow="autoplay">
+</iframe>
+
+
+
+<!-- <iframe
+  src="https://drive.google.com/file/d/1n9CojkopKbCzdz_CKUkJQlCgmZSiERRp/preview?usp=sharing"
+  width="100%"
+  height="400"
+  allow="autoplay">
+</iframe> -->
+
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/third.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/fourth.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/heavy.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/metal2nd.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/GUN0258.jpg)
 
-<iframe
-  src="https://drive.google.com/file/d/1dSwom_p7ywTpekyAJHMhUfEnQBQoVMHd/preview?usp=sharing"
-  width="100%"
-  height="400"
-  allow="autoplay">
-</iframe>
+
+

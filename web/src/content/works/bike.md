@@ -8,7 +8,7 @@ year: 2024
 
 role: 3D Artist
 
-tags: [3D Art, Adobe Maya, Industrial Design]
+tags: [Substance Painter, Autodesk Maya, Blender, Photoshop, Arnold]
 
 ---
 
@@ -34,9 +34,34 @@ I created the motorcycle as a 3D model, developing its overall form, proportions
 
 The final visualization combines detailed modeling, material work, lighting, and composition to present the motorcycle as a complete industrial design concept.
 
-![Project Nyx Preview](/works/ModelPhotos/bike/bike4.jpg)
-![Project Nyx Preview](/works/ModelPhotos/bike/bike5.jpg)
-![Project Nyx Preview](/works/ModelPhotos/bike/bike3.jpg)
-![Project Nyx Preview](/works/ModelPhotos/bike/bike2.jpg)
-![Project Nyx Preview](/works/ModelPhotos/bike/bike1.jpg)
+
+<iframe
+  src="https://drive.google.com/file/d/1wDW-Yi6QS6mMzt0TmqFaAR8C_klXQv6d/preview?usp=sharing"
+  style="width: 100%; height: 450px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+<br>
+
+<iframe
+  src="https://drive.google.com/file/d/1dNbu0quQf3QdObncVZ9T4OX2N9gBvFWx/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+<br>
+<iframe
+  src="https://drive.google.com/file/d/1XBodQHxvQfYfi15hNbf4QyZ7KmAOE465/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+
+<br>
+<iframe
+  src="https://drive.google.com/file/d/1wZarqFr6b0jn1i-WrQYiMzJIzGkKDNYu/preview?usp=sharing"
+  style="width: 100%; height: 450px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+
+
+
+
 

@@ -8,7 +8,7 @@ year: 2024
 
 role: 3D Artist
 
-tags: [3D Art, Adobe Maya, Visual Art]
+tags: [Autodesk Maya, Substance painter, Arnold, Photoshop]
 
 ---
 
@@ -30,26 +30,56 @@ The main goal was to create a distinct emotional response from the viewer while 
 
 I created the 3D environment and arranged the different elements to build the final composition. I worked with volumetric lighting, suspended physics, materials, and camera composition to establish the atmosphere of the piece.
 
+
+
+<div>
+Interact Here
+</div>
+
+
 <iframe
   src="./works/ModelPhotos/creepy/file.html"
   style="width: 100%; height: 400px; border: none; display: block;"
   allowfullscreen>
 </iframe>
+<br>
+<iframe
+  src="https://drive.google.com/file/d/1jcVRM1chs_8rEmjfjWO-nM7Gx9R80czp/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+<br>
 
+<iframe
+  src="https://drive.google.com/file/d/1t8M8T45pMqBWoxOVFvTWF334EfRwusMh/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
 
-
-![Creepy Levitation Preview](works/ModelPhotos/creepy/photo3.jpg)
-
-![Creepy Levitation Preview](works/ModelPhotos/creepy/photo1.jpg)
+<br>
 ![Creepy Levitation Preview](works/ModelPhotos/creepy/banner1.jpg)
 
+<br>
+<iframe
+  src="https://drive.google.com/file/d/1htrFtAXRmGtTDI5azQrIPiHoWPuh8GAS/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+<br>
+
+<iframe
+  src="https://drive.google.com/file/d/1ssqmenm2MUBdpTDj47kTXR__FoFOWCla/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
+<br>
+<iframe
+  src="https://drive.google.com/file/d/1whEaaMbhnwog257dzYlii-o4pKappgJ4/preview?usp=sharing"
+  style="width: 100%; height: 350px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
 
 
-
-
-![Creepy Levitation Preview](works/ModelPhotos/creepy/SUNLIGHT.jpg)
-![Creepy Levitation Preview](works/ModelPhotos/creepy/SKUL.jpg)
-![Creepy Levitation Preview](works/ModelPhotos/creepy/animalskul.jpg)
 
 
 

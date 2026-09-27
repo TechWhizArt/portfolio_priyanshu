@@ -3,7 +3,7 @@ title: Digital Art
 banner: /works/ModelPhotos/artwork/merge.jpg
 year: 2024
 role: Digital Artist
-tags: [Digital Art, Illustration, Sketching, Tattoo Design, Concept Art]
+tags: [Pen Tab, Photoshop]
 ---
 
 A collection of digital artworks exploring sketching, illustration, tattoo design, and experimental visual styles.
@@ -85,7 +85,11 @@ Digital art allows me to explore different ideas and visual styles beyond tradit
   style="width: 100%; height: 400px; border: none; display: block;"
   allowfullscreen>
 </iframe>
-
+<iframe
+  src="https://drive.google.com/file/d/14eBsg-OTvFiY6epQXZxFY34TNnHbLObc/preview?usp=sharing"
+  style="width: 100%; height: 400px; border: none; display: block;"
+  allowfullscreen>
+</iframe>
 
 
 </div>
@@ -105,11 +109,7 @@ Digital art allows me to explore different ideas and visual styles beyond tradit
   allowfullscreen>
 </iframe>
 
-<iframe
-  src="https://drive.google.com/file/d/14eBsg-OTvFiY6epQXZxFY34TNnHbLObc/preview?usp=sharing"
-  style="width: 100%; height: 400px; border: none; display: block;"
-  allowfullscreen>
-</iframe>
+
 <iframe
   src="https://drive.google.com/file/d/1JmxJ0xZfjnLWnxlF4OdCJ6_TVkrjgELx/preview?usp=sharing"
   style="width: 100%; height: 400px; border: none; display: block;"

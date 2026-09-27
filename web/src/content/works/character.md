@@ -3,7 +3,7 @@ title: Furiosa - A Mad Max Saga
 banner: /works/ModelPhotos/character/banner.png
 year: 2024
 role: 3D Artist
-tags: [3D Art, Character Modeling, Blender, Character Design]
+tags: [Autodesk Maya, Substance Painter, Photoshop, Arnold]
 ---
 
 # Furiosa - A Mad Max Saga
@@ -14,10 +14,11 @@ A 3D character model inspired by **Furiosa: A Mad Max Saga**, created as an expl
 
 This project focused on recreating the character in 3D while studying **form, proportions, clothing, accessories, and surface details** to capture the visual style of the character.
 
+The model was also **recognized with an award in the Character Modeling category**, highlighting the quality and detail of the work.
+
 ## Process
 
 I worked on the character modeling, detailing, materials, and overall presentation to create a complete 3D representation.
-
 ![Furiosa - A Mad Max Saga preview](/works/ModelPhotos/character/image.png)
 
 <iframe

@@ -1,20 +1,17 @@
 ---
 title: Other 3D Projects
-banner: /works/ModelPhotos/other/flower.jpg
+banner: /works/ModelPhotos/other/omposter.jpg
 year: 2024
 role: 3D Artist
-tags: [3D Art, Blender, 3D Modeling]
+tags: [Autodesk Maya, Substance painter, Arnold, Photoshop]
 ---
 
-# Other 3D Projects
 
 A collection of additional 3D models and experiments created while exploring different forms, styles, and techniques.
 
 ## Background
 
 These projects allowed me to experiment with **3D modeling, materials, lighting, composition, and different visual styles** beyond my larger projects.
-
-## Works
 
 
 ## The TV Room
@@ -91,16 +88,17 @@ These projects allowed me to experiment with **3D modeling, materials, lighting,
 
 ![Other 3D Projects Preview](works/covers/model.jpg)
 
-## Redbull
+<!-- ## Redbull
 <iframe
-  src="https://drive.google.com/file/d/18Ue97am1J_Ypg3HA5Xa492S74ZHYtoYI/preview?usp=sharing"
-  style="width: 100%; height: 430px; border: none; display:fill;"
+  src="https://drive.google.com/file/d/154_o3adVoiSyg9kM6LEByrrPgTY_Pu_I/preview?usp=sharing"
+  style="width: 100%; height: 430px; border: none; display:fill; ;"
   allowfullscreen>
 </iframe>
 <iframe
   src="https://drive.google.com/file/d/18Ue97am1J_Ypg3HA5Xa492S74ZHYtoYI/preview?usp=sharing"
   style="width: 100%; height: 430px; border: none; display:fill;"
   allowfullscreen>
-</iframe>
+</iframe> -->
+
 
 

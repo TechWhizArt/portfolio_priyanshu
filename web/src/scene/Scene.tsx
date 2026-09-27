@@ -130,7 +130,7 @@ function Man2({
     dwell: 0.35,
     parallax: 1,
     parallaxEase: 0.1,
-    mobilePullback: 1.2,
+    mobilePullback: 0.5,
     mobileTimelineShift: 0.12,
   }
 
