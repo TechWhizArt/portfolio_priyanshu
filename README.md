@@ -1,48 +1,67 @@
 # 3D Portfolio Website
 
-A personal 3D portfolio website built with **React Three Fiber, Three.js, TypeScript, and Vite**.  
-The project combines a scroll-driven 3D scene with interactive portfolio content, project detail pages, animations, and custom visual experiences.
+> An interactive 3D portfolio built to turn a traditional resume into an immersive visual experience.
 
-> **Credits & Attribution**
->
-> This project is based on the open-source 3D resume project created by **Sen Zheng (SEN / SenBuzy)**.
->
-> Original project: [Sen · 3D Resume](https://github.com/dayinji/sen-3d-resume)
->
-> I used the original project as a foundation and **edited, redesigned, and modified it in my own style** to create my personal portfolio. The visual presentation, personal content, portfolio projects, media, and other custom modifications in this version were adapted specifically for my work.
+![3D Portfolio Preview](docs/preview.jpg)
 
-## ✨ About the Project
+## ✦ Overview
 
-This website is designed as an interactive 3D portfolio rather than a traditional static resume.
+This is my personal **3D portfolio website**, built with **React Three Fiber, Three.js, TypeScript, and Vite**.
 
-The main experience combines:
+Instead of presenting my work through a conventional portfolio layout, the website combines a **scroll-driven 3D environment** with HTML-based portfolio sections, project pages, animations, and interactive visual elements.
+
+The project started from an open-source 3D resume and was extensively **edited, redesigned, and customized** to create a portfolio that reflects my own work, visual style, projects, and creative direction.
+
+---
+
+## ✦ What’s Inside
 
 - Scroll-driven 3D camera movement
-- A custom 3D character/environment
-- Interactive portfolio sections
-- Project gallery and project detail pages
-- Markdown-based project content
+- Custom 3D character and environment
+- Interactive resume and portfolio sections
+- Project gallery with dedicated detail pages
+- Markdown-based project documentation
 - Custom images, videos, models, and textures
-- Visual effects such as depth of field, bloom, and film-noise styling
+- Animated transitions and UI interactions
+- Depth of field, bloom, film grain, and other post-processing effects
 - Responsive HTML content layered over the 3D scene
 - GitHub Pages deployment
 
-The goal is to present my projects and creative work through an immersive visual experience while keeping the portfolio content easy to update.
+The project is structured so that **new portfolio work can be added through Markdown content and project data without rebuilding the entire experience.**
 
-## 🛠️ Tech Stack
+---
 
-- React 18
-- TypeScript
-- React Three Fiber
-- Three.js
-- @react-three/drei
-- @react-three/postprocessing
-- Framer Motion
-- Zustand
-- Vite
-- Markdown
+## ✦ Credits & Attribution
 
-## 📁 Project Structure
+This project is based on the open-source 3D resume created by **Sen Zheng (SEN / SenBuzy)**.
+
+**Original Project:**  
+[Sen · 3D Resume](https://github.com/dayinji/sen-3d-resume)
+
+The original project was used as a foundation and subsequently **modified, redesigned, and adapted** for my personal portfolio.
+
+The 3D presentation, personal content, project information, media, UI elements, portfolio structure, and other customizations in this version were developed specifically for my work.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **React 18** | UI and application structure |
+| **TypeScript** | Type-safe development |
+| **React Three Fiber** | React-based 3D rendering |
+| **Three.js** | 3D graphics and scene management |
+| **@react-three/drei** | Three.js helpers and utilities |
+| **@react-three/postprocessing** | Visual effects and post-processing |
+| **Framer Motion** | UI animations and transitions |
+| **Zustand** | Application state management |
+| **Vite** | Development and build tooling |
+| **Markdown** | Project content management |
+
+---
+
+## 📂 Project Structure
 
 ```text
 portfolio/
@@ -85,7 +104,7 @@ portfolio/
 │   └── 3D source files
 │
 ├── docs/
-│   └── preview images
+│   └── preview.jpg
 │
 ├── .github/
 │   └── workflows/
