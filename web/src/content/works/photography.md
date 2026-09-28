@@ -1,6 +1,6 @@
 ---
 title: Photography
-banner: /works/ModelPhotos/other/camel.jpg
+banner: works/ModelPhotos/other/camel.jpg
 year: 2024
 role: Photographer
 tags: [Canon 700, Vivo x300]

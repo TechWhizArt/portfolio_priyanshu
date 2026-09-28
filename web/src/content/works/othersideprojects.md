@@ -1,6 +1,6 @@
 ---
 title: Other Side Projects
-banner: /works/ModelPhotos/other/otherbanner.png
+banner: works/ModelPhotos/other/otherbanner.png
 year: 2024
 role: Creative & VFX
 tags: [VFX, Nuke, Animation, Experimental]

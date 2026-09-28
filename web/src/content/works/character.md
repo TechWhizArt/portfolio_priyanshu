@@ -1,6 +1,6 @@
 ---
 title: Furiosa - A Mad Max Saga
-banner: /works/ModelPhotos/character/banner.png
+banner: works/ModelPhotos/character/banner.png
 year: 2024
 role: 3D Artist
 tags: [Autodesk Maya, Substance Painter, Photoshop, Arnold]

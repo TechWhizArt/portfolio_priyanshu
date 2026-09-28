@@ -1,6 +1,6 @@
 ---
 title: Digital Art
-banner: /works/ModelPhotos/artwork/merge.jpg
+banner: works/ModelPhotos/artwork/merge.jpg
 year: 2024
 role: Digital Artist
 tags: [Pen Tab, Photoshop]

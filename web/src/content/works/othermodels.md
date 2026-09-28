@@ -1,6 +1,6 @@
 ---
 title: Other 3D Projects
-banner: /works/ModelPhotos/other/omposter.jpg
+banner: works/ModelPhotos/other/omposter.jpg
 year: 2024
 role: 3D Artist
 tags: [Autodesk Maya, Substance painter, Arnold, Photoshop]

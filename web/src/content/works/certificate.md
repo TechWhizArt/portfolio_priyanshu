@@ -1,6 +1,6 @@
 ---
 title: Achievements & Certificates
-banner: /works/ModelPhotos/other/achievement.jpeg
+banner: works/ModelPhotos/other/achievement.jpeg
 year: 2025
 role: 
 tags: [Certificates, Awards]
