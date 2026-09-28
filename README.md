@@ -42,14 +42,14 @@ The **3D character and environment were created by the client** and form the vis
 
 ![3D Model](docs/model-02.png)
 
-## ✦ Client
 
 More of the client's creative work can be found here:
-# Priyanshu Yadav
-- [Instagram](#)
-- [ArtStation](#)
-- [YouTube](#)
-- [Behance](#)
+
+## Priyanshu Yadav
+- [Youtube](https://www.youtube.com/@priyanshugonewild)
+- [Instagram](https://www.instagram.com/priyanshugonewild)
+- [ArtStation](https://www.artstation.com/priyanshuyadav)
+- [LinkedIn](https://www.linkedin.com/in/priyanshu-yadav-16043424a?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---
 
