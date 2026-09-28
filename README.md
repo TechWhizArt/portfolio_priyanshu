@@ -2,7 +2,7 @@
 
 > An interactive 3D portfolio built to turn a traditional resume into an immersive visual experience.
 
-![3D Portfolio Preview](docs/preview.jpg)
+![3D Portfolio Preview](docs/preview.png)
 
 ## ✦ Overview
 
