@@ -6,12 +6,11 @@
 
 ## ✦ Overview
 
-This is my personal **3D portfolio website**, built with **React Three Fiber, Three.js, TypeScript, and Vite**.
+This **3D portfolio website** was designed and developed as a custom portfolio experience for a client, combining **React Three Fiber, Three.js, TypeScript, and Vite**.
 
-Instead of presenting my work through a conventional portfolio layout, the website combines a **scroll-driven 3D environment** with HTML-based portfolio sections, project pages, animations, and interactive visual elements.
+The website moves beyond a conventional portfolio layout by combining a **scroll-driven 3D environment** with interactive sections, project detail pages, animations, and layered HTML content.
 
-The project started from an open-source 3D resume and was extensively **edited, redesigned, and customized** to create a portfolio that reflects my own work, visual style, projects, and creative direction.
-
+Using an open-source 3D resume as the initial foundation, I **redesigned, modified, and customized the experience** to align with the client's creative work, visual identity, projects, and overall direction.
 ---
 
 ## ✦ What’s Inside
