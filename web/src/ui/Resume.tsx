@@ -127,7 +127,7 @@ const RESUME = {
         //work experience
         period: '2026 – 2026',
         place: 'Indie Developer',
-        groups: [{ logo: 'flapflap', sub: 'Set Design', link: 'https://zooop.ai/' }],
+        groups: [{ logo: 'flapflap', sub: 'Set Design', link: '/works/flapflap' }],
       },
     ],
   
@@ -149,22 +149,10 @@ const itemV = {
 
 function Group({ group }: { group: ResumeGroup }) {
   const heading =
-    group.logo === 'zooop' ? (
-      <a
-        className="zooop-logo-link"
-        href={group.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="ZOOOP"
-      >
-
-      </a>
-    ): group.logo === 'flapflap' ? (
+    group.logo === 'flapflap' ? (
   <a
     className="flapflap-logo-link"
     href={group.link}
-    target="_blank"
-    rel="noopener noreferrer"
     aria-label="FlapFlap"
   >
     <FlapFlapLogo />

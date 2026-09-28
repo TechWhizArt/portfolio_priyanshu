@@ -1,6 +1,6 @@
 ---
 title: Advertising Videos
-banner: works/advertising-videos/banner.jpg
+banner: 
 year: 2024
 role: Video Editor
 tags: [Video Editing, Color Grading, Videography]

@@ -1,17 +1,3 @@
-// 作品集数据（双语）。5 大板块 → 点击展开作品详情。
-// 纯数据驱动：增删板块 / 作品只改本文件，Works.jsx 仅负责渲染。
-//
-// 板块字段：
-//   id        唯一标识（用于 framer layoutId 共享元素动画）
-//   no        编号 '01'…'05'
-//   title     板块标题
-//   tagline   索引行右侧一句话
-//   items[]   扁平作品列表：{ name, meta?, tags?, link? }
-//             点击 item 弹出全屏详情，可补充可选媒体/文案字段：
-//             { image?, video?, year?, desc? }（缺省时媒体用占位、简介回退 meta/标签）
-//   groups[]  分组作品（与 items 二选一）：{ heading, items: string[] }
-//   awards[]  奖项 chip（可选）
-//   footer    底部技术/备注一行（可选）
 
 export interface WorkListItem {
   name: string

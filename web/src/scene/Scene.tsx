@@ -10,7 +10,7 @@ import { FOCUS_POINTS, FRAMES_PER_NODE } from '../data/focusPoints'
 useGLTF.preload(`${import.meta.env.BASE_URL}models/to_web.glb`)
 
 // 聚焦锚点（glb 内 focus-* 空对象），顺序对应履历节点；名单是唯一真源，见 data/focusPoints.ts
-const POINTS = FOCUS_POINTS as readonly string[]
+const POINTS = (FOCUS_POINTS as readonly string[]).slice(0, -1)
 const M = POINTS.length // 时间轴节点数（= 履历条数），从名单推导，不写死
 const RESUME_FRAMES = M * FRAMES_PER_NODE // 履历区帧数：每节点 FRAMES_PER_NODE 帧（节点 k → 第 k·50 帧）
 const WORKS_ENTRANCE = 50 // 作品区"入场"（画廊屏幕从底部滑入覆盖）占的帧数
@@ -69,8 +69,8 @@ function GradientBackground() {
 // 所有光源（HDRI 环境 + 半球 + 主/补方向光）
 function Lights() {
   const c = {
-    envIntensity: 0.3,
-    hemiIntensity: 0.5,
+    envIntensity: 0.1,
+    hemiIntensity: 0.1,
     hemiSky: '#0707078d',
     hemiGround: '#404040',
     keyIntensity: 1.5,
