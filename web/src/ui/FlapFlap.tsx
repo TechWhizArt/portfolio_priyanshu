@@ -7,7 +7,7 @@ export default function FlapFlapLogo() {
 
         @font-face {
         font-family: 'MyRosyFont';
-        src: url('/fonts/pixel.ttf') format('truetype');
+        src: url('fonts/pixel.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
