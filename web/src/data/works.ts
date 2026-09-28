@@ -63,7 +63,7 @@ export const WORKS: WorksLang = {
           { name: 'Furosa- A Mad Max Saga', meta: '', slug: 'character' },
           { name: 'Other Works', slug: 'othermodels' },
         ],
-        awards: ['Tiger Roar', 'FWA', 'Awwwards'],
+        
       },
       {
         id: 'product',

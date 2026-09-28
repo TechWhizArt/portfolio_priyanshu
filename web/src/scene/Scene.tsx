@@ -20,8 +20,8 @@ const NODE_LINE = 0.3 // 节点"终点"参考线：条目顶部到达视口该�
 // 上下渐变背景球（包裹相机），两端颜色可调
 function GradientBackground() {
   // glb 相机视角很窄(~23°)，只看到渐变中间一条；陡度把可见窄带拉伸出完整过渡
-  const top = '#0b0a0a'
-  const bottom = '#1a1a1a'
+  const top = '#030303'
+  const bottom = '#111111'
   const steep = 1.4
 
   const uniforms = useMemo(
@@ -69,7 +69,7 @@ function GradientBackground() {
 // 所有光源（HDRI 环境 + 半球 + 主/补方向光）
 function Lights() {
   const c = {
-    envIntensity: 0.1,
+    envIntensity: 0.06,
     hemiIntensity: 0.1,
     hemiSky: '#0707078d',
     hemiGround: '#404040',
@@ -77,7 +77,7 @@ function Lights() {
     keyColor: '#04040492',
     keyPos: [5, 8, 5] as [number, number, number],
     fillIntensity: 1,
-    fillColor: '#161617',
+    fillColor: '#010101',
     fillPos: [-5, 4, -4] as [number, number, number],
   }
 
@@ -546,12 +546,12 @@ function Post2({
   dofRangeRef: MutableRefObject<number>
 }) {
   const post = {
-    bloomIntensity: 1,
+    bloomIntensity: 0.5,
     bloomThreshold: 0.82,
     dof: true,
-    startBokeh: 7.4,
-    startRange: 2.0,
-    focusBokeh: 11.0,
+    startBokeh: 2,
+    startRange: 3.0,
+    focusBokeh: 0.0,
     focusRange: 0.15,
     startBlendFrame: 48,
     endBlendFrame: RESUME_FRAMES - 50, // 末节点附近回到"起始帧"景深档（原 250−50=200）
