@@ -113,7 +113,7 @@ function SectionWorks({
 
 // 全屏沉浸详情：渲染该作品的 md（banner + 标题 + markdown 正文 + 外链）；
 // 无 md 时回退到占位 banner + meta/标签简介
-function WorkDetail({
+export function WorkDetail({
   item,
   data,
   onClose,

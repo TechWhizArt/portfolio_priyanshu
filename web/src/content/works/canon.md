@@ -48,6 +48,7 @@ The final artwork combines detailed geometry, industrial materials, lighting, an
   allow="autoplay">
 </iframe> -->
 
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/first.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/third.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/fourth.jpg)
 ![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/heavy.jpg)

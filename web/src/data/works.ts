@@ -108,8 +108,10 @@ export const WORKS: WorksLang = {
           { name: 'Animation', slug: 'animation' },
           { name: 'Certificates', slug: 'certificate' },
           { name: 'Other side projects', slug: 'othersideprojects' },
+
         ],
       },
+ 
     ],
 }
 
@@ -128,3 +130,4 @@ export function sectionCount(section: WorkSection): number {
   if (section.groups) return section.groups.reduce((n, g) => n + g.items.length, 0)
   return 0
 }
+

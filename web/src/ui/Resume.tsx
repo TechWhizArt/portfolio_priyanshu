@@ -1,5 +1,7 @@
-import { motion } from 'framer-motion'
-
+import { motion, AnimatePresence } from 'framer-motion'
+import { WorkDetail } from './Works'
+import { WORKS, type WorkListItem } from '../data/works'
+import { useState } from 'react'
 import { SOCIAL_ICONS } from './SocialIcons'
 import { FOCUS_POINTS } from '../data/focusPoints'
 import FlapFlapLogo from './FlapFlap'
@@ -127,7 +129,7 @@ const RESUME = {
         //work experience
         period: '2026 – 2026',
         place: 'Indie Developer',
-        groups: [{ logo: 'flapflap', sub: 'Set Design', link: '/works/flapflap' }],
+        groups: [{ logo: 'flapflap', sub: 'Set Design'}],
       },
     ],
   
@@ -147,16 +149,16 @@ const itemV = {
   show: { opacity: 1, y: 0, transition: { duration: 0.75, ease: EASE } },
 }
 
-function Group({ group }: { group: ResumeGroup }) {
+function Group({ group, onOpenWork, }: { group: ResumeGroup, onOpenWork?:(slug:string) =>void }) {
   const heading =
     group.logo === 'flapflap' ? (
-  <a
+  <button
     className="flapflap-logo-link"
-    href={group.link}
+    onClick={() => onOpenWork?.('flapflap')}
     aria-label="FlapFlap"
   >
     <FlapFlapLogo />
-  </a>
+  </button>
 )  : group.link ? (
       <a className="about-link" href={group.link} target="_blank" rel="noopener noreferrer">
         {group.heading}
@@ -209,7 +211,7 @@ function Group({ group }: { group: ResumeGroup }) {
   )
 }
 
-function Entry({ entry, index }: { entry: ResumeEntry; index: number }) {
+function Entry({ entry, index, onOpenWork }: { entry: ResumeEntry; index: number, onOpenWork: (slug: string) => void}) {
   return (
     <motion.div
       className="tl-entry"
@@ -248,7 +250,7 @@ function Entry({ entry, index }: { entry: ResumeEntry; index: number }) {
             ))}
           </motion.ul>
         )}
-        {entry.groups && entry.groups.map((g, i) => <Group key={i} group={g} />)}
+        {entry.groups && entry.groups.map((g, i) => <Group key={i} group={g} onOpenWork={onOpenWork}/>)}
       </div>
     </motion.div>
   )
@@ -256,6 +258,7 @@ function Entry({ entry, index }: { entry: ResumeEntry; index: number }) {
 
 export default function Resume() {
   const data = RESUME
+  const [activeWork, setActiveWork] = useState<WorkListItem | null>(null)
   return (
     <section className="resume" >
       <motion.h2
@@ -269,9 +272,37 @@ export default function Resume() {
       </motion.h2>
       <div className="timeline">
         {data.entries.map((e, i) => (
-          <Entry key={i} entry={e} index={i} />
-        ))}
+        <Entry
+          key={i}
+          entry={e}
+          index={i}
+          onOpenWork={(slug) => {
+            const work = WORKS.sections
+              .flatMap((section) => section.items || [])
+              .find((item) => item.slug === slug)
+
+            if (work) {
+              setActiveWork(work)
+            } else if (slug === 'flapflap') {
+              setActiveWork({
+                name: 'FlapFlap',
+                slug: 'flapflap',
+              })
+            }
+          }}
+        />
+      ))}
       </div>
+      <AnimatePresence>
+        {activeWork && (
+          <WorkDetail
+            key={activeWork.slug || activeWork.name}
+            item={activeWork}
+            data={WORKS}
+            onClose={() => setActiveWork(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   )
 }

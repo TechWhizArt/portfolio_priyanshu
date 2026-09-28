@@ -2,7 +2,7 @@
 
 title: Project Nyx
 
-banner: /works/ModelPhotos/bike/bike3.jpg
+banner: works/ModelPhotos/bike/bike3.jpg
 
 year: 2024
 

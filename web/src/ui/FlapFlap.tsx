@@ -15,7 +15,7 @@ export default function FlapFlapLogo() {
         .flapflap-logo {
           display: inline-flex;
           align-items: baseline;
-
+          
           font-family: 'MyRosyFont';
           font-size: 28px;
           font-weight: 700;
@@ -23,7 +23,28 @@ export default function FlapFlapLogo() {
 
           color:#989853;
         }
-        
+        .flapflap-logo-link {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+          font: inherit;
+          color: inherit;
+          cursor: pointer;
+          appearance: none;
+          -webkit-appearance: none;
+          outline: none;
+          box-shadow: none;
+        }
+
+        .flapflap-logo-link:focus,
+        .flapflap-logo-link:focus-visible,
+        .flapflap-logo-link:hover,
+        .flapflap-logo-link:active {
+          outline: none;
+          box-shadow: none;
+          background: none;
+        }
         .flapflap-p {
           display: inline-block;
           transform-origin: 50% 100%;
