@@ -7,7 +7,7 @@ import Env from './Env'
 import { FOCUS_POINTS, FRAMES_PER_NODE } from '../data/focusPoints'
 
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/me.glb`)
+useGLTF.preload(`${import.meta.env.BASE_URL}models/to_web.glb`)
 
 // 聚焦锚点（glb 内 focus-* 空对象），顺序对应履历节点；名单是唯一真源，见 data/focusPoints.ts
 const POINTS = FOCUS_POINTS as readonly string[]
