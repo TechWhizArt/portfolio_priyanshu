@@ -1,6 +1,6 @@
 ---
 title: Advertising Videos
-banner: 
+banner: works/ModelPhotos/other/vdobanner.png
 year: 2024
 role: Video Editor
 tags: [Video Editing, Color Grading, Videography]
