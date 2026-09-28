@@ -18,7 +18,7 @@ This project focused on recreating the character in 3D while studying **form, pr
 
 I worked on the character modeling, detailing, materials, and overall presentation to create a complete 3D representation.
 
-![Furiosa - A Mad Max Saga preview](/works/ModelPhotos/character/image.png)
+![Furiosa - A Mad Max Saga preview](works/ModelPhotos/character/image.png)
 
 <iframe
   src="https://drive.google.com/file/d/1tvZxIeXUhwx2Rj0SW2ACZ8kE7Hx5n9fJ/preview?usp=sharing"

@@ -26,10 +26,10 @@ The film received the **Award of Excellence by ASIFA India in 2022**, an **inter
 **Project:** *Miscut — A Stop-Motion Film*  
 **Role:** Set Design Team
 
-![Certificate 01](/works/ModelPhotos/other/prize.jpg)
+![Certificate 01](works/ModelPhotos/other/prize.jpg)
 
 ## Professional Certificate
 
-![Certificate 01](/works/ModelPhotos/other/certificate.jpg)
+![Certificate 01](works/ModelPhotos/other/certificate.jpg)
 
 A professional certificate earned through a technical learning program, contributing to my knowledge and skills in the field.
