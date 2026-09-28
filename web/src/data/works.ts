@@ -125,7 +125,6 @@ export const WORKS: WorksLang = {
         ],
       },
     ],
-  
 }
 
 // 板块配图（横向画廊每张卡片左侧的整高封面）。放到 public/works/covers/ 下。
