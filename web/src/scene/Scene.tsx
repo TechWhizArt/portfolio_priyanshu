@@ -117,11 +117,29 @@ function Man2({
   dofBokehRef: MutableRefObject<number>
   dofRangeRef: MutableRefObject<number>
 }) {
-  const posX = 0
-  const posY = 0.4
-  const posZ = -0.7
-  const scale = 2.25
-  const rotationY = 0
+
+
+// ============================================================
+// DESKTOP MODEL SETTINGS
+// Change these only if you want to modify the PC version.
+// ============================================================
+const DESKTOP_MODEL = {
+  position: [0, 0.4, -0.7] as [number, number, number],
+  scale: 2.25,
+  rotationY: 0,
+}
+
+// ============================================================
+// MOBILE MODEL SETTINGS
+// Change these only for mobile/tablet screens.
+// position Y = higher/lower
+// scale = smaller/larger
+// ============================================================
+const MOBILE_MODEL = {
+  position: [0, 0.65, -0.7] as [number, number, number],
+  scale: 1.85,
+  rotationY: 0,
+}
 
   // mobilePullback：移动端相机沿「焦点→相机」方向拉远的倍率（1 = 不变，1.2 = 远 20%）
   // mobileTimelineShift：移动端「时间轴阶段」相机水平位移，单位=视距占比（正=左移，负=右移，0=关）
@@ -130,9 +148,12 @@ function Man2({
     dwell: 0.35,
     parallax: 1,
     parallaxEase: 0.1,
-    mobilePullback: 0.5,
-    mobileTimelineShift: 0.12,
+    mobilePullback: 0.9,
+    mobileTimelineShift: 0,
+
   }
+  
+  const mobileCorrection = useRef(new THREE.Vector3())
 
   const eye = {
     enabled: true,
@@ -294,6 +315,13 @@ function Man2({
   const paraEuler = useRef(new THREE.Euler(0, 0, 0, 'YXZ'))
   const paraQuat = useRef(new THREE.Quaternion())
 
+//added
+const mobileFocusCameraPos = useRef(new THREE.Vector3())
+const mobileFocusCameraRight = useRef(new THREE.Vector3())
+const mobileFocusCaptured = useRef(false)
+
+
+
   useFrame((_, dt) => {
     const a = 1 - Math.pow(cam.damping, dt)
 
@@ -446,7 +474,7 @@ const dwell = (t: number) => {
         }
         dofBokehRef.current = sample(dof.bokeh, dof.startBokeh, dof.worksBokeh)
         // focusRange 按模型 group 缩放折算到世界单位（scene 被放大 scale 倍，清晰范围需同比放大才与 intro3d 观感一致）。
-        dofRangeRef.current = sample(dof.range, dof.startRange, dof.worksRange) * scale
+        dofRangeRef.current = sample(dof.range, dof.startRange, dof.worksRange) 
       }
     }
 
@@ -474,14 +502,23 @@ const dwell = (t: number) => {
       camera.quaternion.multiplyQuaternions(paraQuat.current, camQuat.current)
       // 移动端「时间轴阶段」把镜头整体左移，让主体从满宽文字后错开。
       // 权重：从 Hero 渐入(s: -0.8→0.3)、进入作品区随 smoothOff 渐出 → 无跳变。
-      if (isMobile.current && cam.mobileTimelineShift !== 0) {
-        const tlWeight = THREE.MathUtils.smoothstep(s, -0.8, 0.3) * (1 - smoothOff)
-        if (tlWeight > 0) {
-          // translateX 沿局部 +X（屏幕右）；取负 → 相机左移
-          const dist = camera.position.distanceTo(focusRef.current)
-          camera.translateX(-dist * cam.mobileTimelineShift * tlWeight)
-        }
-      }
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       if (camera.fov !== glbCam.fov) {
         camera.fov = glbCam.fov
         camera.updateProjectionMatrix()
@@ -521,11 +558,13 @@ const dwell = (t: number) => {
     }
   })
 
+  const modelSettings = isMobile.current ? MOBILE_MODEL : DESKTOP_MODEL
   return (
+    
     <group
-      position={[posX, posY, posZ]}
-      rotation={[0, (rotationY * Math.PI) / 180, 0]}
-      scale={scale}
+      position={modelSettings.position}
+      rotation={[0, (modelSettings.rotationY * Math.PI) / 180, 0]}
+      scale={modelSettings.scale}
     >
       <primitive object={model} />
     </group>

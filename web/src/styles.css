@@ -212,6 +212,8 @@ canvas {
   }
 }
 
+
+
 /* ---------- 首屏装饰画框 + 角标元数据 ---------- */
 .hero-chrome {
   --m: clamp(16px, 2.4vh, 30px);
@@ -297,6 +299,9 @@ canvas {
 @media (max-width: 640px) {
   .hm-right {
     display: none;
+  }
+  .hero {
+    min-height: 100dvh;
   }
 }
 
