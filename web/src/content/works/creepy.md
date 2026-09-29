@@ -2,7 +2,7 @@
 
 title: Creepy Levitation
 
-banner: works/ModelPhotos/creepy/banner1.jpg
+banner: works/ModelPhotos/creepy/banner1.webp
 
 year: 2024
 
@@ -12,7 +12,6 @@ tags: [Autodesk Maya, Substance painter, Arnold, Photoshop]
 
 ---
 
-# Creepy Levitation
 
 Creepy Levitation is a 3D art project I created in September 2024, exploring a darker and more unsettling visual direction.
 
@@ -58,7 +57,7 @@ Interact Here
 
 <br>
 
-![Creepy Levitation Preview](works/ModelPhotos/creepy/banner1.jpg)
+![Creepy Levitation Preview](works/ModelPhotos/creepy/banner1.webp)
 
 <br>
 <iframe

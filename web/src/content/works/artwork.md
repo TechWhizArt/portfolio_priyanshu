@@ -1,16 +1,14 @@
 ---
 title: Digital Art
-banner: works/ModelPhotos/artwork/merge.jpg
+banner: works/ModelPhotos/artwork/merge.webp
 year: 2024
 role: Digital Artist
 tags: [Pen Tab, Photoshop]
 ---
 
-A collection of digital artworks exploring sketching, illustration, tattoo design, and experimental visual styles.
 
-## Background
+A collection of digital artworks I created, exploring sketching, illustration, tattoo design, and experimental visual styles.
 
-Digital art allows me to explore different ideas and visual styles beyond traditional mediums, ranging from personal sketches and character studies to tattoo concepts and experimental compositions.
 
 
 ## Sketches

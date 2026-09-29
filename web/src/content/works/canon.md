@@ -2,7 +2,7 @@
 
 title: Double Barrel Plasma Cannon
 
-banner: works/ModelPhotos/canon/heavy.jpg
+banner: works/ModelPhotos/canon/heavy.webp
 
 year: 2023
 
@@ -12,7 +12,6 @@ tags: [Substance Painter, Autodesk Maya, Photoshop, Arnold]
 
 ---
 
-# Double Barrel Plasma Cannon
 
 Double Barrel Plasma Cannon was my first 3D project, completed in November 2023 as an exploration of hard-surface modeling and detailed futuristic design.
 
@@ -48,12 +47,12 @@ The final artwork combines detailed geometry, industrial materials, lighting, an
   allow="autoplay">
 </iframe> -->
 
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/first.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/third.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/fourth.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/heavy.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/metal2nd.jpg)
-![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/GUN0258.jpg)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/first.webp)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/third.webp)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/fourth.webp)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/heavy.webp)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/metal2nd.webp)
+![Double Barrel Plasma Cannon Preview](works/ModelPhotos/canon/GUN0258.webp)
 
 
 

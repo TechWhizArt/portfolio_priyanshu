@@ -2,7 +2,7 @@
 
 title: Project Nyx
 
-banner: works/ModelPhotos/bike/bike3.jpg
+banner: works/ModelPhotos/bike/bike3.webp
 
 year: 2024
 
@@ -12,7 +12,6 @@ tags: [Substance Painter, Autodesk Maya, Blender, Photoshop, Arnold]
 
 ---
 
-# Project Nyx
 
 Project Nyx is a sci-fi motorcycle concept and 3D visualization project created by me, exploring futuristic vehicle design through a restrained and minimal visual language.
 

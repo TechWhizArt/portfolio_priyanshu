@@ -1,19 +1,16 @@
 ---
 title: Photography
-banner: works/ModelPhotos/other/camel.jpg
+banner: works/ModelPhotos/other/camel.webp
 year: 2024
 role: Photographer
 tags: [Canon 700, Vivo x300]
 ---
 
-# Photography
 
 A collection of photographs I captured, exploring composition, lighting, perspective, and everyday visual moments.
 
-## Background
 
-Photography allows me to experiment with different perspectives and capture moments through my own visual approach.
-
+<br>
 
 <div className = "photos-grid">
 

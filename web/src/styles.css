@@ -300,9 +300,18 @@ canvas {
   .hm-right {
     display: none;
   }
-  .hero {
-    min-height: 100dvh;
+ 
+  .scene-bg {
+    position: fixed;
+    top: -80px;
+    right: -60px;
+    bottom: -80px;
+    left: -80px;
+    height: calc(120svh + 100px);
   }
+  
+
+
 }
 
 /* ---------- About 叠层（标题 Rancho + 正文 Cormorant Upright） ---------- */
@@ -1289,81 +1298,189 @@ canvas {
   max-width: 1100px;
 }
 
+.wk-detail-animation {
+  max-width: 1100px !important;
+}
+.motiongraphic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 50px 20px;
+  align-items: start;
+
+}
+.motiongraphic iframe{
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0;
+  border:none;
+
+
+}
 
 .photos-grid {
-  column-count: 3;
-  column-gap: 5px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom:5px !important; 
+  gap: 50px 20px;
+  align-items: start;
 }
 
 .photos-grid iframe {
-  width: 100%;
-  height:max-content; /* iframe still needs a height */
+  width: 100vh;
+  height: 400px !important;
   display: block;
-  border: none;
-  margin: 0 0 5px;
-
-  break-inside: avoid;
+  margin: 0 !important;
+  border-radius: 12px;
+  transform: scale(1.05) !important;
   -webkit-column-break-inside: avoid;
-}
-.wk-detail-animation {
-  max-width: 1000px;
-}
-.motiongraphic {
-  column-count: 3;
-  column-gap: 16px;
-  margin: 1.6em 0;
-}
-
-.wk-detail-posters-posters {
-  column-count: 3;
-  column-gap: 16px;
-  margin: 1.6em 0;
-}
-.wk-detail-posters-posters img{
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 0 16px;
-  border-radius: 12px;
-  break-inside: avoid;
-  align-self: center;
-
-}
-.wk-detail-posters-posters video {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 16px;
-  border-radius: 12px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+      border:none;
 }
 
 
 .sketches-grid, .tattoo-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px 16px;
+  margin-bottom:5px !important; 
+  gap: 50px 20px;
   align-items: start;
-  
 }
-.sketches-grid img {
+.sketches-grid iframe {
+  width: 100vh;
+  height: 400px !important;
+  display: block;
+  margin: 0 !important;
+
+  transform: scale(1.05) !important;   
+  border:none;
+}
+
+.tattoo-grid iframe {
   width: 100%;
   height: auto;
   display: block;
   margin: 0 !important;
-  border-radius: 12px;
+
+  border:none;
 }
 
-.tattoo-grid img {
+
+@media (max-width: 640px) {
+  .photos-grid {
+    width:100%;
+    justify-self:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+    align-items: start;
+
+
+  }
+
+  .photos-grid iframe {
+    width: 100%;
+    height: 220px !important; /* same height for every photo */
+    display: block;
+    border: none;
+    margin: 0 0 5px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    transform: scale(1.05) !important;
+
+  }
+  .sketches-grid,
+  .tattoo-grid {
+    width:100%;
+    justify-self:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+    align-items: start;
+  }
+
+  .sketches-grid iframe,
+  .tattoo-grid iframe {
+    width: 90%;
+    height: 210px !important;
+    display: block;
+    margin: 0 !important;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    border:none;
+  }
+  .wk-detail-animation {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .motiongraphic,
+  .wk-detail-posters-posters {
+    width:100%;
+    justify-self:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+    align-items: start;
+  }
+
+  .motiongraphic iframe {
+    width: 100%;
+    height: 230px;
+    display: block;
+    margin: 0 !important;
+
+    border:none;
+  }
+
+  .wk-detail-posters-posters iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 230px !important;
+    display: block;
+    margin: 0 0 8px;
+    transform: scale(1) !important;
+        border:none;
+    
+  }
+}
+
+
+
+
+.wk-detail-posters-posters{
+  column-count: 3;
+  column-gap: 16px;
+  margin: 1.6em 0;
+}
+.wk-detail-posters-posters iframe{
   width: 100%;
+  height: 310px;
+  display: block;
+  margin: 0 0 16px;
+  border:none;
+  break-inside: avoid;
+  align-self: center;
+}
+
+.wk-detail-posters-posters video {
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 !important;
-  border-radius: 12px;
-
+  margin: 0 auto 16px;
+  border:none;
 }
-
 
 
 

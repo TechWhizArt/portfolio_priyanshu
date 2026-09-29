@@ -89,7 +89,7 @@ const RESUME = {
         period: 'Dec 2024 – Feb 2026',
         place: 'Cosmicweb · Vasai, India',
         role: 'Graphic Designer · Video Editor',
-        logo: { src: `${import.meta.env.BASE_URL}images/cw.jpeg`, alt: 'HOTSAR' },
+        logo: { src: `${import.meta.env.BASE_URL}images/cw.webp`, alt: 'HOTSAR' },
         points: [
           
           'Skills: Social Media Content, Graphic Design, Video Editing',
@@ -102,7 +102,7 @@ const RESUME = {
         period: 'Jul 2025 – Jan 2026',
         place: 'Pixel Perfect Films · Marol, Mumbai',
         role: '3D Artist',
-        logo: { src: `${import.meta.env.BASE_URL}images/ppf.jpeg`, alt: 'Bad Printer Studio' },
+        logo: { src: `${import.meta.env.BASE_URL}images/ppf.webp`, alt: 'Bad Printer Studio' },
         points: [
           '3D Artist · Pixel Perfect Films',
           'Skills: 3D Modeling, Texturing & UV Mapping, Environment Design, Lighting',
@@ -116,7 +116,7 @@ const RESUME = {
         groups: [
           {
             heading: 'Priyanshwho',
-            logoImg: `${import.meta.env.BASE_URL}images/creator.png`,
+            logoImg: `${import.meta.env.BASE_URL}images/creator.webp`,
             sub: 'Creating since 9 years',
             items: ['Streamer · Gamer · Artist',
               '9K+ Subs on Youtube'

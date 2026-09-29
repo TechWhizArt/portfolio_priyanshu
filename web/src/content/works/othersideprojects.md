@@ -1,12 +1,11 @@
 ---
 title: Other Side Projects
-banner: works/ModelPhotos/other/otherbanner.png
+banner: works/ModelPhotos/other/otherbanner.webp
 year: 2024
 role: Creative & VFX
-tags: [VFX, Nuke, Animation, Experimental]
+tags: [VFX, Nuke, Special Effects, Experimental]
 ---
 
-# Other Side Projects
 
 A collection of smaller projects and experiments created to explore different creative tools, techniques, and visual styles.
 

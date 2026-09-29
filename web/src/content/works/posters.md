@@ -1,6 +1,6 @@
 ---
 title: Advertising Posters
-banner: works/ModelPhotos/other/poster.jpg
+banner: works/ModelPhotos/other/poster.webp
 year: 2024
 role: Graphic Designer
 tags: [Poster Design, Color Palette, Shapes]

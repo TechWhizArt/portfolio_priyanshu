@@ -1,6 +1,6 @@
 ---
 title: Animation Exploration
-banner: works/ModelPhotos/other/animation.jpeg
+banner: works/ModelPhotos/other/animation.webp
 year: 2024
 role: Animator
 tags: [Animation, Motion Design, 3D]

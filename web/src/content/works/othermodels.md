@@ -1,6 +1,6 @@
 ---
 title: Other 3D Projects
-banner: works/ModelPhotos/other/redubul.jpg
+banner: works/ModelPhotos/other/redubul.webp
 year: 2024
 role: 3D Artist
 tags: [Autodesk Maya, Substance painter, Arnold, Photoshop]
@@ -17,7 +17,7 @@ These projects allowed me to experiment with **3D modeling, materials, lighting,
 
 >A stylized 3D self-representation created in a toon-inspired character style.
 
-![Other 3D Projects Preview](works/ModelPhotos/other/omposter.jpeg)
+![Other 3D Projects Preview](works/covers/digiartcover.webp)
 
 
 ## The TV Room
@@ -85,12 +85,12 @@ These projects allowed me to experiment with **3D modeling, materials, lighting,
 
 ## Skate Board
 
-![Other 3D Projects Preview](works/covers/model.jpg)
+![Other 3D Projects Preview](works/covers/model.webp)
 
 ## Redbull
 <div className = "othermodelsimg">
 
-![Other 3D Projects Preview](works/ModelPhotos/other/redubul.jpg)
+![Other 3D Projects Preview](works/ModelPhotos/other/redubul.webp)
 </div>
 
 <!-- ## Redbull

@@ -1,6 +1,6 @@
 ---
 title: FlapFlap- A Godot Game
-banner: works/covers/gamecover.png
+banner: works/covers/gamecover.webp
 year: 2026
 role: Set Design
 tags: [Godot Game Engine, Photoshop]
@@ -29,7 +29,7 @@ tags: [Godot Game Engine, Photoshop]
 
 <img
  class="flap-bird"
- src="works/covers/bird.png"
+ src="works/covers/bird.webp"
  alt="FlapFlap Bird"
 />
 
@@ -72,7 +72,7 @@ I designed the **game textures and background environments**, creating the visua
 <div class="flap-media-row">
   <div class="flap-media-item">
     <img
-      src="works/covers/gamephoto1.png"
+      src="works/covers/gamephoto1.webp"
       alt="FlapFlap Environment 1"
     />
   </div>

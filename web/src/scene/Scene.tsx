@@ -148,7 +148,7 @@ const MOBILE_MODEL = {
     dwell: 0.35,
     parallax: 1,
     parallaxEase: 0.1,
-    mobilePullback: 0.9,
+    mobilePullback: 0.8,
     mobileTimelineShift: 0,
 
   }

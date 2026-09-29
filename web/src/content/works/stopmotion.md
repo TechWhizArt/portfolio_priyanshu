@@ -1,11 +1,10 @@
 ---
 title: Miscut
-banner: works/ModelPhotos/other/stopmotioin.png
+banner: works/ModelPhotos/other/stopmotioin.webp
 year: 2023
 role: Set Design Team
 tags: [Stop Motion, Set Design, Production Design, Award Winner]
 ---
-# Miscut
 
 *Miscut* is a collaborative stop-motion film project that I worked on as part of the **Set Design Team**, contributing to the physical environments used throughout the film.
 
