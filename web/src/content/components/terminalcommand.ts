@@ -38,11 +38,15 @@ Available commands:
 `,
 
     about: () => `
-Hi! I'm Niharika.
+    Hi! I'm Niharika.
 
-B.Tech CSE student interested in software development,
-AI/ML, creative technology, and digital projects.
-`,
+    B.Tech CSE student interested in software development,
+    AI/ML, creative technology, and digital projects.
+    `,
+    whoami:()=>`Hi! I'm Niharika.
+
+    B.Tech CSE student interested in software development,
+    AI/ML, creative technology, and digital projects.`,
 
     socials: () => `
 Socials:
@@ -69,9 +73,21 @@ Socials:
     nika:()=> `Kaizoku Oni Orewa Naru`,
     shivam:() => `Moti Chuchi`,
     lavi:()=>`Lavi nhi Lavdi`,
+    chirag:()=>`Pagal khi ka hattt bohot pitegaaaa`,
+    riya:()=>`Chota don`,
+    pragati:()=>`Bda don`,
+    rohan:()=>`Jldi shi hoja pagal`,
+    kittu:()=>`Selfie maine leli aaj`,
+    drishti:()=>`Selfie maine leli aaj`,
+    ishu:()=>`Paise wali didi`,
+    prachi:()=>`Paise wali didi`,
 
 
     clear: () => ({
+        type: "clear",
+        output: "",
+    }),
+    clr: () => ({
         type: "clear",
         output: "",
     }),

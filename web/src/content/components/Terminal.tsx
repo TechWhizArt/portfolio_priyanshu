@@ -67,7 +67,7 @@ ${result.output}`;
                 </div>
 
                 <span className="terminal-title">
-                    magicpie@portfolio: ~
+                    Jarvisss: ~
                 </span>
             </div>
 
