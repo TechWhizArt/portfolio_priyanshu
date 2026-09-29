@@ -2273,40 +2273,31 @@ canvas {
 
 }
 
-
-
 .flap-media-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 100%;
-
-    align-items: stretch;
 }
 
 .flap-media-item {
     width: 100%;
-    aspect-ratio: 16 / 10;
-
-    overflow: hidden;
-    border-radius: 12px;
-
+    overflow:hidden;
     background: #111;
 }
 
 .flap-media-item img,
 .flap-media-item iframe {
     width: 100%;
-    height: 100%;
-
+    height: 210px;
     display: block;
     border: none;
+    margin: 0;
 }
 
 .flap-media-item img {
-    object-fit: cover;
+    object-fit: contain;
 }
-
 @media (max-width: 700px) {
     .flap-media-row {
         grid-template-columns: 1fr;

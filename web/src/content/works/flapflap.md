@@ -68,12 +68,12 @@ I designed the **game textures and background environments**, creating the visua
 ---
 
 ## 🎮 Inside the Game
-
 <div class="flap-media-row">
+
   <div class="flap-media-item">
     <img
       src="works/covers/gamephoto1.webp"
-      alt="FlapFlap Environment 1"
+      alt="FlapFlap gameplay"
     />
   </div>
 
