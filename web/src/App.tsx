@@ -1,8 +1,8 @@
-import { Suspense, useRef, useState } from 'react'
+import { lazy, Suspense, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion'
 import * as THREE from 'three'
-import Scene from './scene/Scene'
+const Scene = lazy(() => import('./scene/Scene'))
 import NoiseOverlay from './ui/NoiseOverlay'
 import Resume from './ui/Resume'
 import Works from './ui/Works'

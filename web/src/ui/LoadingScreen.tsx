@@ -7,27 +7,79 @@ export default function LoadingScreen() {
   const [hiding, setHiding] = useState(false)
   const [removed, setRemoved] = useState(false)
 
-  const peak = useRef(0)
+  const displayed = useRef(0)
+  const [value, setValue] = useState(0)
 
-  peak.current = Math.max(
-    peak.current,
-    Math.min(Math.max(progress, 0), 100)
-  )
+  /*
+   * Smooth the reported loading progress.
+   *
+   * Drei's progress can jump:
+   *
+   * 0 → 33 → 33 → 66 → 100
+   *
+   * Instead of showing those jumps directly, the UI
+   * gradually approaches the real value.
+   */
+  useEffect(() => {
+    const target = Math.min(Math.max(progress, 0), 100)
 
-  const value = Math.round(peak.current)
+    let frame = 0
 
+    const animate = () => {
+      const current = displayed.current
+
+      /*
+       * Move toward the real loading progress.
+       * Faster when far away, slower when close.
+       */
+      const difference = target - current
+
+      if (Math.abs(difference) < 0.15) {
+        displayed.current = target
+      } else {
+        displayed.current += difference * 0.08
+      }
+
+      const next = Math.round(displayed.current)
+
+      setValue((previous) =>
+        previous === next ? previous : next
+      )
+
+      if (Math.abs(target - displayed.current) > 0.15) {
+        frame = requestAnimationFrame(animate)
+      }
+    }
+
+    frame = requestAnimationFrame(animate)
+
+    return () => cancelAnimationFrame(frame)
+  }, [progress])
+
+  /*
+   * Only hide when the REAL loading manager reaches 100%.
+   */
   useEffect(() => {
     if (progress < 100) return
 
+    /*
+     * Make sure the UI has enough time to visually reach 100%.
+     */
+    const finish = setTimeout(() => {
+      displayed.current = 100
+      setValue(100)
+    }, 150)
+
     const hide = setTimeout(() => {
       setHiding(true)
-    }, 700)
+    }, 850)
 
     const remove = setTimeout(() => {
       setRemoved(true)
-    }, 1300)
+    }, 1500)
 
     return () => {
+      clearTimeout(finish)
       clearTimeout(hide)
       clearTimeout(remove)
     }
@@ -37,7 +89,7 @@ export default function LoadingScreen() {
 
   const R = 34
   const C = 2 * Math.PI * R
-  const offset = C * (1 - peak.current / 100)
+  const offset = C * (1 - value / 100)
 
   return (
     <>
@@ -59,10 +111,13 @@ export default function LoadingScreen() {
           background: #080808;
 
           opacity: 1;
+
           transition:
             opacity 0.65s cubic-bezier(.4,0,.2,1);
 
           overflow: hidden;
+
+          will-change: opacity;
         }
 
         .loading-screen.hidden {
@@ -87,6 +142,8 @@ export default function LoadingScreen() {
 
           animation:
             loaderFloat 4s ease-in-out infinite;
+
+          will-change: transform;
         }
 
         @keyframes loaderFloat {
@@ -180,7 +237,7 @@ export default function LoadingScreen() {
           stroke-linecap: round;
 
           transition:
-            stroke-dashoffset .2s ease;
+            stroke-dashoffset .15s ease;
         }
 
 
@@ -248,6 +305,8 @@ export default function LoadingScreen() {
 
           animation:
             orbitClockwise 5s linear infinite;
+
+          will-change: transform;
         }
 
         .orbit-one::after {
@@ -298,6 +357,8 @@ export default function LoadingScreen() {
 
           animation:
             orbitCounter 8s linear infinite;
+
+          will-change: transform;
         }
 
         .orbit-two::after {
@@ -405,6 +466,8 @@ export default function LoadingScreen() {
           animation:
             particleMove
             3s ease-in-out infinite;
+
+          will-change: transform, opacity;
         }
 
         .p1 {
@@ -569,30 +632,23 @@ export default function LoadingScreen() {
 
       `}</style>
 
-
       <div
         className={`loading-screen${hiding ? ' hidden' : ''}`}
       >
-
         <div className="loading-box">
 
-          {/* Soft glow */}
           <div className="loading-glow" />
 
-          {/* Floating particles */}
           <div className="particle p1" />
           <div className="particle p2" />
           <div className="particle p3" />
           <div className="particle p4" />
           <div className="particle p5" />
 
-          {/* Outer orbit */}
           <div className="orbit-two" />
 
-          {/* Inner orbit */}
           <div className="orbit-one" />
 
-          {/* Progress ring */}
           <div className="loading-ring">
 
             <svg viewBox="0 0 80 80">
@@ -618,25 +674,20 @@ export default function LoadingScreen() {
             </svg>
 
             <div className="loading-center">
-
               <span className="loading-number">
                 {value}%
               </span>
-
             </div>
 
           </div>
 
-          {/* Scanning effect */}
           <div className="scan-line" />
 
-          {/* Label */}
           <div className="loading-label">
             LOADING<span className="loading-dots" />
           </div>
 
         </div>
-
       </div>
     </>
   )
