@@ -1315,8 +1315,6 @@ canvas {
   display: block;
   margin: 0;
   border:none;
-
-
 }
 
 .photos-grid {
@@ -1326,20 +1324,63 @@ canvas {
   gap: 50px 20px;
   align-items: start;
 }
+.photos-grid-butki {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom:5px !important; 
+  gap: 50px 20px;
+  align-items: start;
+}
+.photos-grid-lambi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom:5px !important; 
+  gap: 50px 20px;
+  align-items: start;
+}
 
 .photos-grid iframe {
   width: 100vh;
-  height: 400px !important;
+  height: 450px !important;
   display: block;
   margin: 0 !important;
-  border-radius: 12px;
+
   transform: scale(1.05) !important;
   -webkit-column-break-inside: avoid;
   pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
-      border:none;
+  border:none;
+}
+.photos-grid-butki iframe {
+  width: 100vh;
+  height: 250px !important;
+  display: block;
+  margin: 0 !important;
+
+  transform: scale(1.05) !important;
+  -webkit-column-break-inside: avoid;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  border:none;
+}
+
+.photos-grid-lambi iframe {
+  width: 100vh;
+  height: 600px !important;
+  display: block;
+  margin: 0 !important;
+
+  transform: scale(1.05) !important;
+  -webkit-column-break-inside: avoid;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  border:none;
 }
 
 
@@ -1371,6 +1412,22 @@ canvas {
 
 
 @media (max-width: 640px) {
+
+  .wk-detail-creepy iframe{
+    height:150px !important;
+  }
+  .wk-detail-bike iframe{
+    height:150px !important;
+  }
+  .wk-detail-canon iframe{
+    height:150px !important;
+  }
+  .wk-detail-othermodels iframe{
+    height:150px !important;
+  }
+  
+
+
   .photos-grid {
     width:100%;
     justify-self:center;
@@ -1378,8 +1435,22 @@ canvas {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px 20px;
     align-items: start;
-
-
+  }
+  .photos-grid-butki {
+    width:100%;
+    justify-self:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+    align-items: start;
+  }
+  .photos-grid-lambi {
+    width:100%;
+    justify-self:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+    align-items: start;
   }
 
   .photos-grid iframe {
@@ -1395,7 +1466,34 @@ canvas {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     transform: scale(1.05) !important;
-
+  }
+    .photos-grid-butki iframe {
+    width: 100%;
+    height: 150px !important; /* same height for every photo */
+    display: block;
+    border: none;
+    margin: 0 0 5px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    transform: scale(1.05) !important;
+  }
+    .photos-grid-lambi iframe {
+    width: 100%;
+    height: 400px !important; /* same height for every photo */
+    display: block;
+    border: none;
+    margin: 0 0 5px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    transform: scale(1.05) !important;
   }
   .sketches-grid,
   .tattoo-grid {

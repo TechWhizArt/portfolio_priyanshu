@@ -6,13 +6,8 @@ role: Graphic Designer
 tags: [Poster Design, Color Palette, Shapes]
 ---
 
-
-
 A collection of advertising posters I designed for different businesses, focusing on visual communication and promotional design.
 
-## Background
-
-I created promotional posters for different businesses, adapting each design to its brand, audience, and advertising purpose.
 
 ## Process
 

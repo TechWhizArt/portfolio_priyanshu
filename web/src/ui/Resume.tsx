@@ -104,7 +104,7 @@ const RESUME = {
         role: '3D Artist',
         logo: { src: `${import.meta.env.BASE_URL}images/ppf.webp`, alt: 'Bad Printer Studio' },
         points: [
-          '3D Artist · Pixel Perfect Films',
+          
           'Skills: 3D Modeling, Texturing & UV Mapping, Environment Design, Lighting',
           'Work: 3D Visualization, Scene Composition, Asset Creation, Lighting & Rendering',
         ],
