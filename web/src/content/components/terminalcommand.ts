@@ -81,6 +81,10 @@ Socials:
     drishti:()=>`Selfie maine leli aaj`,
     ishu:()=>`Paise wali didi`,
     prachi:()=>`Paise wali didi`,
+    bhak:()=>`Tu bhakkkk`,
+    chutiya:()=>`Tu chutiya`,
+    loda:()=>`Tu loda`,
+    loveu:()=>`love u more jaanu`,
 
 
     clear: () => ({
