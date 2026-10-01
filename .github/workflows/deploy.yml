@@ -31,7 +31,7 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
-      - run: npm run build # tsc -b && vite build → web/dist
+      - run: npm run build:github # tsc -b && vite build → web/dist
       - uses: actions/upload-pages-artifact@v4
         with:
           path: web/dist # 相对仓库根（uses 步骤不受 working-directory 影响）
