@@ -84,7 +84,11 @@ Socials:
     bhak:()=>`Tu bhakkkk`,
     chutiya:()=>`Tu chutiya`,
     loda:()=>`Tu loda`,
-    loveu:()=>`love u more jaanu`,
+    loveu:()=>`love u more baby`,
+    arya:()=>`ye krde vo krde ye htade vo htade hatt bsdk`,
+    sumit:()=>`Orewa femboy desu`,
+    
+
 
 
     clear: () => ({
