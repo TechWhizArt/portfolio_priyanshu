@@ -2,7 +2,7 @@
 
 > An interactive 3D portfolio designed and developed as a custom digital experience for a client.
 
-![3D Portfolio Preview](docs/preview.png)
+![3D Portfolio Preview](docs/image.webp)
 
 ## ✦ Overview
 
@@ -25,7 +25,6 @@ The 3D character and environment used in the website were **created by the clien
 - GitHub Pages deployment
 
 
-
 ## ✦ Credits & Attribution
 
 The website was built using the open-source **3D Resume** project by **Sen Zheng (SEN / SenBuzy)** as its initial foundation.
@@ -38,17 +37,12 @@ The original project was extensively **modified, redesigned, and customized** fo
 
 The **3D character and environment were created by the client** and form the visual foundation of the portfolio experience.
 
-![3D Model](docs/model-01.png)
-
-![3D Model](docs/model-02.png)
-
-
 More of the client's creative work can be found here:
 
 ## Priyanshu Yadav
+- [ArtStation](https://www.artstation.com/priyanshuyadav)
 - [Youtube](https://www.youtube.com/@priyanshugonewild)
 - [Instagram](https://www.instagram.com/priyanshugonewild)
-- [ArtStation](https://www.artstation.com/priyanshuyadav)
 - [LinkedIn](https://www.linkedin.com/in/priyanshu-yadav-16043424a?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---

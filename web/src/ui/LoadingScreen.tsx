@@ -6,32 +6,31 @@ export default function LoadingScreen() {
 
   const [hiding, setHiding] = useState(false)
   const [removed, setRemoved] = useState(false)
+  const [value, setValue] = useState(0)
 
   const displayed = useRef(0)
-  const [value, setValue] = useState(0)
+  const targetRef = useRef(0)
+  const animationFrame = useRef<number | null>(null)
 
   /*
    * Smooth the reported loading progress.
    *
-   * Drei's progress can jump:
+   * The loading manager can jump:
+   * 0 → 33 → 66 → 100
    *
-   * 0 → 33 → 33 → 66 → 100
-   *
-   * Instead of showing those jumps directly, the UI
-   * gradually approaches the real value.
+   * The displayed value smoothly catches up instead
+   * of jumping between values.
    */
   useEffect(() => {
-    const target = Math.min(Math.max(progress, 0), 100)
+    targetRef.current = Math.min(Math.max(progress, 0), 100)
 
-    let frame = 0
+    if (animationFrame.current !== null) {
+      cancelAnimationFrame(animationFrame.current)
+    }
 
     const animate = () => {
+      const target = targetRef.current
       const current = displayed.current
-
-      /*
-       * Move toward the real loading progress.
-       * Faster when far away, slower when close.
-       */
       const difference = target - current
 
       if (Math.abs(difference) < 0.15) {
@@ -42,46 +41,50 @@ export default function LoadingScreen() {
 
       const next = Math.round(displayed.current)
 
-      setValue((previous) =>
-        previous === next ? previous : next
-      )
+      setValue((previous) => {
+        return previous === next ? previous : next
+      })
 
       if (Math.abs(target - displayed.current) > 0.15) {
-        frame = requestAnimationFrame(animate)
+        animationFrame.current = requestAnimationFrame(animate)
+      } else {
+        animationFrame.current = null
       }
     }
 
-    frame = requestAnimationFrame(animate)
+    animationFrame.current = requestAnimationFrame(animate)
 
-    return () => cancelAnimationFrame(frame)
+    return () => {
+      if (animationFrame.current !== null) {
+        cancelAnimationFrame(animationFrame.current)
+        animationFrame.current = null
+      }
+    }
   }, [progress])
 
   /*
-   * Only hide when the REAL loading manager reaches 100%.
+   * Only finish when the REAL loading manager reaches 100%.
    */
   useEffect(() => {
     if (progress < 100) return
 
-    /*
-     * Make sure the UI has enough time to visually reach 100%.
-     */
-    const finish = setTimeout(() => {
+    const finish = window.setTimeout(() => {
       displayed.current = 100
       setValue(100)
-    }, 150)
+    }, 120)
 
-    const hide = setTimeout(() => {
+    const hide = window.setTimeout(() => {
       setHiding(true)
-    }, 850)
+    }, 700)
 
-    const remove = setTimeout(() => {
+    const remove = window.setTimeout(() => {
       setRemoved(true)
-    }, 1500)
+    }, 1350)
 
     return () => {
-      clearTimeout(finish)
-      clearTimeout(hide)
-      clearTimeout(remove)
+      window.clearTimeout(finish)
+      window.clearTimeout(hide)
+      window.clearTimeout(remove)
     }
   }, [progress])
 
@@ -111,13 +114,9 @@ export default function LoadingScreen() {
           background: #080808;
 
           opacity: 1;
-
-          transition:
-            opacity 0.65s cubic-bezier(.4,0,.2,1);
+          transition: opacity .55s cubic-bezier(.4,0,.2,1);
 
           overflow: hidden;
-
-          will-change: opacity;
         }
 
         .loading-screen.hidden {
@@ -140,10 +139,7 @@ export default function LoadingScreen() {
           align-items: center;
           justify-content: center;
 
-          animation:
-            loaderFloat 4s ease-in-out infinite;
-
-          will-change: transform;
+          animation: loaderFloat 4s ease-in-out infinite;
         }
 
         @keyframes loaderFloat {
@@ -156,6 +152,7 @@ export default function LoadingScreen() {
           50% {
             transform: translateY(-6px);
           }
+
         }
 
 
@@ -166,31 +163,35 @@ export default function LoadingScreen() {
         .loading-glow {
           position: absolute;
 
-          width: 100px;
-          height: 100px;
+          width: 110px;
+          height: 110px;
 
           border-radius: 50%;
 
-          background: rgba(255,255,255,0.04);
+          background:
+            radial-gradient(
+              circle,
+              rgba(255,255,255,.07) 0%,
+              rgba(255,255,255,.025) 45%,
+              transparent 72%
+            );
 
-          filter: blur(18px);
-
-          animation:
-            glowPulse 2.5s ease-in-out infinite;
+          animation: glowPulse 2.5s ease-in-out infinite;
         }
 
         @keyframes glowPulse {
 
           0%,
           100% {
-            transform: scale(.85);
-            opacity: .4;
+            transform: scale(.88);
+            opacity: .5;
           }
 
           50% {
-            transform: scale(1.15);
-            opacity: .8;
+            transform: scale(1.08);
+            opacity: .9;
           }
+
         }
 
 
@@ -199,7 +200,6 @@ export default function LoadingScreen() {
         ========================= */
 
         .loading-ring {
-
           position: relative;
 
           width: 80px;
@@ -209,7 +209,6 @@ export default function LoadingScreen() {
         }
 
         .loading-ring svg {
-
           width: 100%;
           height: 100%;
 
@@ -217,27 +216,21 @@ export default function LoadingScreen() {
         }
 
         .loading-track {
-
           fill: none;
 
-          stroke:
-            rgba(255,255,255,0.08);
-
+          stroke: rgba(255,255,255,.08);
           stroke-width: 2;
         }
 
         .loading-progress {
-
           fill: none;
 
           stroke: white;
-
           stroke-width: 2.8;
 
           stroke-linecap: round;
 
-          transition:
-            stroke-dashoffset .15s ease;
+          transition: stroke-dashoffset .12s linear;
         }
 
 
@@ -246,13 +239,10 @@ export default function LoadingScreen() {
         ========================= */
 
         .loading-center {
-
           position: absolute;
-
           inset: 0;
 
           display: flex;
-
           align-items: center;
           justify-content: center;
 
@@ -260,17 +250,13 @@ export default function LoadingScreen() {
         }
 
         .loading-number {
-
           color: white;
 
           font-family: monospace;
-
           font-size: 15px;
-
           letter-spacing: -1px;
 
-          animation:
-            numberPulse 2s ease-in-out infinite;
+          animation: numberPulse 2s ease-in-out infinite;
         }
 
         @keyframes numberPulse {
@@ -283,6 +269,7 @@ export default function LoadingScreen() {
           50% {
             opacity: 1;
           }
+
         }
 
 
@@ -291,26 +278,18 @@ export default function LoadingScreen() {
         ========================= */
 
         .orbit-one {
-
           position: absolute;
 
           width: 108px;
           height: 108px;
 
           border-radius: 50%;
+          border: 1px solid rgba(255,255,255,.09);
 
-          border:
-            1px solid
-            rgba(255,255,255,0.09);
-
-          animation:
-            orbitClockwise 5s linear infinite;
-
-          will-change: transform;
+          animation: orbitClockwise 5s linear infinite;
         }
 
         .orbit-one::after {
-
           content: '';
 
           position: absolute;
@@ -326,12 +305,11 @@ export default function LoadingScreen() {
           background: white;
 
           box-shadow:
-            0 0 8px white,
-            0 0 18px rgba(255,255,255,.5);
+            0 0 7px white,
+            0 0 14px rgba(255,255,255,.4);
         }
 
         @keyframes orbitClockwise {
-
           to {
             transform: rotate(360deg);
           }
@@ -343,7 +321,6 @@ export default function LoadingScreen() {
         ========================= */
 
         .orbit-two {
-
           position: absolute;
 
           width: 132px;
@@ -351,18 +328,12 @@ export default function LoadingScreen() {
 
           border-radius: 50%;
 
-          border:
-            1px dashed
-            rgba(255,255,255,0.07);
+          border: 1px dashed rgba(255,255,255,.07);
 
-          animation:
-            orbitCounter 8s linear infinite;
-
-          will-change: transform;
+          animation: orbitCounter 8s linear infinite;
         }
 
         .orbit-two::after {
-
           content: '';
 
           position: absolute;
@@ -377,12 +348,10 @@ export default function LoadingScreen() {
 
           background: rgba(255,255,255,.7);
 
-          box-shadow:
-            0 0 8px white;
+          box-shadow: 0 0 7px white;
         }
 
         @keyframes orbitCounter {
-
           to {
             transform: rotate(-360deg);
           }
@@ -394,7 +363,6 @@ export default function LoadingScreen() {
         ========================= */
 
         .scan-line {
-
           position: absolute;
 
           width: 74px;
@@ -412,16 +380,13 @@ export default function LoadingScreen() {
 
           z-index: 6;
 
-          animation:
-            scan 2.5s ease-in-out infinite;
+          animation: scan 2.5s ease-in-out infinite;
         }
 
         @keyframes scan {
 
           0% {
-            transform:
-              translateY(-36px);
-
+            transform: translateY(-36px);
             opacity: 0;
           }
 
@@ -438,11 +403,10 @@ export default function LoadingScreen() {
           }
 
           100% {
-            transform:
-              translateY(36px);
-
+            transform: translateY(36px);
             opacity: 0;
           }
+
         }
 
 
@@ -451,7 +415,6 @@ export default function LoadingScreen() {
         ========================= */
 
         .particle {
-
           position: absolute;
 
           width: 3px;
@@ -460,14 +423,11 @@ export default function LoadingScreen() {
           border-radius: 50%;
 
           background: white;
-
           opacity: .2;
 
           animation:
             particleMove
             3s ease-in-out infinite;
-
-          will-change: transform, opacity;
         }
 
         .p1 {
@@ -503,20 +463,15 @@ export default function LoadingScreen() {
 
           0%,
           100% {
-            transform:
-              translate(0,0)
-              scale(.7);
-
+            transform: translate(0,0) scale(.7);
             opacity: .15;
           }
 
           50% {
-            transform:
-              translate(5px,-10px)
-              scale(1.3);
-
+            transform: translate(5px,-10px) scale(1.3);
             opacity: .65;
           }
+
         }
 
 
@@ -525,28 +480,22 @@ export default function LoadingScreen() {
         ========================= */
 
         .loading-label {
-
           position: absolute;
 
           top: 145px;
           left: 50%;
 
-          transform:
-            translateX(-50%);
+          transform: translateX(-50%);
 
-          color:
-            rgba(255,255,255,.45);
+          color: rgba(255,255,255,.45);
 
           font-family: monospace;
-
           font-size: 8px;
-
           letter-spacing: 4px;
 
           white-space: nowrap;
 
-          animation:
-            labelPulse 2s ease-in-out infinite;
+          animation: labelPulse 2s ease-in-out infinite;
         }
 
         @keyframes labelPulse {
@@ -559,6 +508,7 @@ export default function LoadingScreen() {
           50% {
             opacity: .75;
           }
+
         }
 
 
@@ -567,11 +517,9 @@ export default function LoadingScreen() {
         ========================= */
 
         .loading-dots::after {
-
           content: '';
 
-          animation:
-            dots 1.5s steps(4,end) infinite;
+          animation: dots 1.5s steps(4,end) infinite;
         }
 
         @keyframes dots {
@@ -595,6 +543,7 @@ export default function LoadingScreen() {
           100% {
             content: '';
           }
+
         }
 
 
@@ -634,6 +583,7 @@ export default function LoadingScreen() {
 
       <div
         className={`loading-screen${hiding ? ' hidden' : ''}`}
+        aria-hidden="true"
       >
         <div className="loading-box">
 
@@ -646,7 +596,6 @@ export default function LoadingScreen() {
           <div className="particle p5" />
 
           <div className="orbit-two" />
-
           <div className="orbit-one" />
 
           <div className="loading-ring">
